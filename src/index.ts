@@ -16,9 +16,14 @@ export interface ClientSettings {
   user: string;
 }
 
+export interface CastleWarehouseAccess {
+  url: string;
+}
+
 export interface Configuration {
   system: SystemSpec;
-  user: {"ask-id": string};
+  user: { "ask-id": string };
+  "castle-warehouse": CastleWarehouseAccess;
 }
 
 export interface CheckedConfiguration extends Configuration {
